@@ -1,0 +1,173 @@
+1. Which class topics your project involves: 7, see below
+
+1a. The field of computer ethics
+   Reference: Moor, J. (1985). What is Computer Ethics. Metaphilosophy, 266-275.
+1b. Contractarianism:  A contract, or set of shared rules, will result from free, rational, self-interested people living together because they will realize that there are benefits to cooperating.   
+   Reference: Martin, C.  A brief introduction to morality
+1c. Respecting core values
+   Reference: Moor, J. (1998). Reason, Relativity, and Responsibility in Computer Ethics. Computers and Society, 14-21.
+1d. Excerpts from the ACM code of ethics
+   Reference: ACM Code 2018 Task Force. (2018, June 22). ACM Code of Ethics and Professional Conduct. Retrieved from ACM: https://www.acm.org/code-of-ethics
+1e. Ethics of hacking (Spafford, 1992)
+   Reference: Spafford, E. (1992). Are Computer Hacker Break-ins Ethical? Journal of Systems and Software, 41-47.
+1. Teaching or using students to hack
+   Reference: Nakashima, E., & Soltani, A. (2014, October 7). The ethics of Hacking 101. Retrieved from Washington Post: https://www.washingtonpost.com/postlive/the-ethics-of-hacking-101/2014/10/07/39529518-4014-11e4-b0ea-8141703bbf6f_story.html
+1g. Privacy
+   Reference:  Moor, J. (1997). Towards a Theory of Privacy in the Information Age. Computers and Society, 27-32.
+
+
+2. How many endings your narrative includes: 10
+
+3. How many knots your narrative includes: 26
+
+4. How many 2-choice and 3-choice knots your narrative includes:
+1 choice: 16 knots
+2 choice: 6 knots
+3 or more choices: 4 knots
+
+5. How many instances of conditional content your narrative includes: 4 instances
+
+6. Whether you have incorporates a scoring mechanism: Yes
+-------------------------
+
+You are the Project Manager and Team Lead for the installation of new pharmacy management software at a small pharmacy.  You are set to release new pharmacy software in two weeks.  Beta tests of the new software have been conducted and there are key operational decisions that need to be made.
+->Insurance Information
+
+=== Insurance Information ===
+Insurance information will be collected from a patient the first time the pharmacy fills a prescription for a patient.  The new software can store a patient’s insurance information so it can just be confirmed by the patient when the patient fills future prescriptions.  This will give a patient the opportunity to receive their prescription faster in future visits.
+
++ Always store this data without asking the patient first -> issue 1
++ Ask the patient first before storing this data -> issue 2
+
+=== issue 1 ===
+~ score = score +1
+After beta testing, a team member reports a potential issue that did not actually arise during the beta testing.  To confirm whether the issue exists, beta testing will have to be restarted.
+
++ Ignore the threat ->  issue realized
++ Start a small and focused beta test to investigate the issue -> issue resolved 1
++ Restart beta testing and delay software release -> issue resolved 2
+
+=== issue 2 ===
+After beta testing, a team member reports a potential issue that did not actually arise during the beta testing.  To confirm whether the issue exists, beta testing will have to be restarted.
+
++ Ignore the threat -> issue realized
++ Start a small and focused beta test to investigate the issue -> issue resolved 1
++ Restart beta testing and delay software release -> issue resolved 2
+
+=== issue resolved 1 ===
+The small beta test was successful in allowing for the resolution of the potential issue, and the product release was only slightly delayed. -> hack attempt
+
+=== issue resolved 2 ===
+The second set of beta testing allowed for the resolution of the potential issue, but the product release was delayed. -> hack attempt
+
+=== issue realized ===
+~ score = score +1
+Shortly after the new software was released, a patient is dispensed the wrong medication from the pharmacy and becomes very ill.  The patient’s lawyer contacts the pharmacy to get more information on the situation.
+
++ You acknowledge that beta testing was not comprehensive. -> get sued
++ You argue that no system can be tested for all possible scenarios and quietly issue a new release of the software to correct the dispensing issue. -> hack attempt
+
+
+
+ === get sued ===
+You admit that you did not restart beta testing to check for the potential because you did not want to delay the software release.  Your company is sued.  You get fired. -> END
+
+
+=== hack attempt ===
+
+Shortly after the software is deployed, you become aware of a hacking attempt.  The counter measures that you have in place appear to have been successful, but you consider whether additional anti-hacking counter measures are needed.  You could hire a respected local firm and ask them to attempt to ethically hack the software.  This company’s proven approach to ethical hacking is to provide a red team and a blue team.
+
++ Ignore the hacking threat since it was unsuccessful -> hack realized
++ Contact the local university information systems department and have them ethically hack the software system.  -> security flaws resolved cheap
++ Contract with a local firm to deploy a red team and blue team -> security flaws resolved expensive
+
+
+=== hack realized ===
+~ score = score +1
+Your software was hacked and some patient information was exposed. 
+
++ You acknowledge that you could have done more to prevent the hackers-> law suit
++ You argue that no system can stop all hacks and quietly beef up security to further minimize further hacks. -> sharing data
+
+=== security flaws resolved cheap ===
+
+The university’s ethical hacking team is successful in identifying software flaws and this results in improved system security.  This effort not only improves system security, but results in a helpful partnership in which the pharmacy hires university interns to help with future projects. -> sharing data
+
+
+=== security flaws resolved expensive ===
+
+The red team and blue team approach employed by the local firm significantly improves system security, but the cost of hiring this firm eats into operating profits. -> sharing data
+
+=== law suit ===
+You admit that you could have done more to minimize the threats posed by hackers, but you did not want to spend the money to do so.  Your company is sued.  You get fired. -> END
+
+
+=== sharing data ===
+
+A major drug company contacts you to ask if they can buy information from your software.
++ {issue 1} [Sell the data without asking for patient permission] -> sell
++ {issue 1} [Give people the option to opt out of sharing their data] -> not happy
++ {issue 2} [Sell the data without asking for patient permission] ->meh
++ {issue 2} [Give people the option to opt out of sharing their data] -> happy
+
+
+
+
+
+=== sell ===
+
+It becomes known to the public that your pharmacy has been selling patient information to a drug company.  There is a law suit and the number of prescriptions filled at your pharmacy declines.  You are among the many people that are laid off because of this. -> END
+
+
+=== not happy ===
+
+You gave patients the opportunity to opt out of sharing their data, but many are still not happy that your pharmacy has stored this data without previously asking for patient permission to store it-> conditional ending 3
+
+== meh ===
+~ score = score +1
+
+It becomes known to the public that your pharmacy has been selling patient information to a drug company.  You did previously ask patients for the pharmacy to store this data. -> conditional ending 2
+
+=== happy ===
+
+You give patients the option to opt out of sharing their data.  They previously gave you permission to store their data. -> conditional ending 1
+
+=== conditional ending 1 ===
+
++ {score=0} -> win 1
++ {score >0} -> win
+
+=== win 1 ===
+You made smart decisions throughout the scenario.  You consistently asked patients for permission to store and share their data.  You also prioritized patient safety and the security of patient data.  Your contributions to the pharmacy are exceptional.  Well done! ->END
+
+=== win ===
+You consistently asked patients for permission to store and share their data.  As a company, though, we also want to prioritize patient safety and the security of patient data.  Please keep this in mind when making future decisions and you will continue to be a valuable member of our pharmacy team.  ->END
+
+=== conditional ending 2 ===
+
++ {score=1}  ->  win 2
++ {score >1}  ->  lose 2
+
+=== win 2 ===
+In line with the policies of the pharmacy, you prioritized patient safety and the security of patient data.  You also asked patients for permission to store their data.  As a company, though, we also want to ask patients for permission to share their data.   Please keep this in mind when making future decisions and you will continue to be a valuable member of our pharmacy team.  ->END
+
+=== lose 2 ===
+Not only are customers not happy that we have sold their data without permission, but we also did not prioritize patient safety and/or the security of patient data.  These principles are the foundation of our pharmacy and you did not uphold them.  Unfortunately, we are going to have to fire you.  ->END
+
+
+
+=== conditional ending 3 ===
+
++ {score=1}  ->  win 3
++ {score >1}  ->  lose 3
+
+=== win 3 ===
+In line with the policies of the pharmacy, you prioritized patient safety and the security of patient data.  You also asked patients for permission to share their data.  As a company, though, we also want to ask patients for permission to store their data.   Please keep this in mind when making future decisions and you will continue to be a valuable member of our pharmacy team.  ->END
+
+=== lose 3 ===
+Not only are customers not happy that we have stored their data without permission, but we also did not prioritize patient safety and/or the security of patient data.  These principles are the foundation of our pharmacy and you did not uphold them.  Unfortunately, we are going to have to fire you.  ->END
+
+
+
+
+
